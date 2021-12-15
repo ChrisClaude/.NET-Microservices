@@ -34,9 +34,8 @@ namespace CommandService.SyncDataServices.Grpc
             catch (Exception ex)
             {
                 Console.WriteLine($"---> Could not call GRPC Server {ex}");
+                return null;
             }
-            
-            return null;
         }
     }
 }
